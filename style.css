@@ -224,6 +224,9 @@ nav .navigation ul li a:hover{
 .pro-links{
   margin-top: 10px;
 }
+.pro-links a{
+  text-decoration: none;
+}
 .pro-links i{
   padding: 10px 13px;
   border: 1px solid #043404;
