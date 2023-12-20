@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIT for students</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav>
+            <img src="logo.png" alt="">
+            <div class = "navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="about-home">
+            <h2>Courses</h2>
+            <img src="bit.jpg" alt="">
+        </section>
+        <!--course-->
+        <section id="resource">
+            <h1>Courses</h1>
+            <div class="resource-box">
+
+                <div onclick="window.location.href='math.html';" class="resource">
+                    <img src="images/c1.jpg"  alt="">
+                    <div class="details">
+                        <h6>Mathematics</h6>
+                        
+                    </div>
+                </div>
+
+                <div onclick="window.location.href='phy.html';" class="resource">
+                    <img src="images/c2.jpg"  alt="">
+                    <div class="details">
+                        
+                        <h6>Physics</h6>
+                        
+                    </div>
+                    
+                </div>
+
+                <div onclick="window.location.href='chem.html';" class="resource">
+                    <img src="images/c3.jpg"  alt="">
+                    <div class="details">
+                        
+                        <h6>Chemistry</h6>
+                        
+                    </div>
+                    
+                </div>
+
+      
+            <div class="resource">
+                <img src="images/c4.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>Internet of Things</h6>
+                    >
+                </div>
+                
+            </div>
+            <div class="resource">
+                <img src="images/c5.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>Introduction to Pyhton</h6>
+                    
+                </div>
+                
+            </div>
+            <div class="resource">
+                <img src="images/c6.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>C Programming</h6>
+                    
+                </div>
+                
+            </div>
+            <div onclick="window.location.href='ee.html';" class="resource">
+                <img src="images/c6.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>Basic Electrical Engineering</h6>
+                    
+                </div>
+                
+            </div>
+            <div class="resource">
+                <img src="images/c6.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>Introduction to Electronics Engineering</h6>
+                    
+                </div>
+                
+            </div>
+            <div class="resource">
+                <img src="images/c6.jpg"  alt="">
+                <div class="details">
+                    
+                    <h6>Basic Electronics Engineering</h6>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <!--footer-->
+        <footer>
+            <div class="footer-col">
+                <h3>Top products</h3>
+                <li>Textbooks</li>
+                <li>Refference Books</li>
+                <li>Notes</li>
+                <li>Projest Sample</li>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <li>VTU</li>
+                <li>BIT</li>
+                <li>Guides</li>
+                <li>Google</li>
+            </div>
+            <div class="footer-col">
+                <h3>Features</h3>
+                <li>Organised</li>
+                <li>Accessible</li>
+                <li>Student Friendly</li>
+                <li>Managed website</li>
+            </div>
+            <div class="footer-col">
+                <h3>Useful Links</h3>
+                <a href="https://geniusscansdk.com/"><li>Genius Scan</li></a>
+                <a href="https://www.edx.org/"><li>EdX</li></a>
+                <a href="https://www.bibme.org/"><li>BibMe</li></a>
+                <a href="https://flipboard.com/"><li>Flipboard</li></a>
+            </div>
+            <div class="footer-col">
+                <h3>Query</h3>
+                <p>You can trust us. We will respond to all you queries(Postitve or Negative).</p>
+                <div class="email">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="email" placeholder="Enter Email">
+                        <input type="text" placeholder="Enter your Query">
+                        <button type="submit" class="green">SEND</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©2023 All rights reserved | This template is made by Codecrafters. </p>
+                <div class="pro-links">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </footer>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "kushwahasunita873@gmail.com",
+                Password : "Nerine_2005",
+                To : "kushwahasunitakrdm@gmail.com",
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+        </script>
+
+
+    </body>
+
+</html>
